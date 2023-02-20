@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bizuki - Random stuff</title>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="container">
+                <div class="links">
+                    <a href="index.html">home</a>
+                    <a href="random_stuff.html">random stuff</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        
+        <div class="container">
+            <h1>Some comics</h1>
+            <p>
+                Here you can read some XKCD comics. 
+            </p>
+            <div id="comics-block" class="comics">
+                <img id="comics-page" src="" alt="your advertisement could be here">
+                <div class="comics-info">
+                    <div>
+                        <h2>Info about this comics</h2>
+                        <ul>
+                            <li>Title: <i id="comics-title"></i></li>
+                            <li>Upload time: <span id="comics-time"></span></li>
+                        </ul>
+                    </div>
+                    <button class="reroll-button" type="button" onclick="rerollComicPage()">Reroll🎲?</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="container">
+            <hr>
+            <div class="contacts">
+                <a id="tg-link" href="https://t.me/Bizuki"><img src="public/img/telegram.svg" alt="telegram"></a>
+                <a id="gh-link" href="https://github.com/bizuki"><img src="public/img/github.svg" alt="github"></a>
+                <a id="email" href="mailto:dollar.daler@gmail.com"><img src="public/img/mail.png" alt="email"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- to intialize content -->
+    <script>rerollComicPage()</script>
+</body>
+</html>

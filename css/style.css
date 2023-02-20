@@ -28,9 +28,10 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 1em;
+    display: grid;
 }
 
 a {
@@ -119,4 +120,58 @@ details[open] summary:after {
 
 .contacts {
     text-align: center;
+}
+
+.topnav {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.7em 0.5em ;
+    background-color: var(--background);
+}
+
+header .topnav .links{
+    display: flex;
+    flex-direction: row;
+}
+
+header .topnav a {
+    font-size: 1.5rem;
+    color: #53dfd3;
+    margin-right: 2em;
+}
+
+header .topnav a:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: all .3s ease;
+}
+
+.comics {
+    display: flex;
+    flex-direction: row;
+    visibility: collapse;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+.reroll-button {
+    background-color: #73ddbd;
+    border: none;
+    color: #03001C;
+    padding: 15px 32px;
+    max-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+    font-size: 16px;
+}
+
+.reroll-button:active, .reroll-button:hover {
+    background-color: #83ddbd;
+}
+
+.comics-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
