@@ -1,0 +1,27 @@
+{
+  "name": "fwd",
+  "version": "1.0.0",
+  "description": "a frontend project for UI",
+  "main": "src/main.ts",
+  "type": "module",
+  "dependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.18.0",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizuki/FWD.git"
+  },
+  "author": "bizuki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bizuki/FWD/issues"
+  },
+  "homepage": "https://github.com/bizuki/FWD#readme"
+}
