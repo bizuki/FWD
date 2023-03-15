@@ -21,7 +21,7 @@
 
 <div class="comics">
     {#await comicsInfo}
-    ... Loading comics
+        Loading comics. Please wait a little......
     {:then comicsInfo} 
         <img src={comicsInfo.img} alt={comicsInfo.alt}>
         <div class="comics-info">
