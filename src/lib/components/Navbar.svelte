@@ -1,12 +1,13 @@
 <script>
-    import { link } from "svelte-routing";
+  import { base } from '$app/paths';
+  console.log(base);
 </script>
 
 <header>
     <div class="topnav">
       <div class="links">
-        <a href="/" use:link>Home</a>
-        <a href="comics_page"use:link>Comics page</a>
+        <a href="{base}/">Home</a>
+        <a href="{base}/comics/">Comics page</a>
       </div>
     </div>
   <hr>

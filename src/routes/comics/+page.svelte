@@ -1,5 +1,5 @@
 <script>
-    import Comics from "../components/Comics.svelte";
+    import Comics from "$lib/components/Comics.svelte";
 </script>
 
 <svelte:head>

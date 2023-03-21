@@ -1,7 +1,7 @@
 <script>
-    import telegramLogo from "../../assets/telegram.svg";
-    import mailLogo from "../../assets/mail.png";
-    import githubLogo from "../../assets/github.svg";
+    import telegramLogo from "$lib/assets/telegram.svg";
+    import mailLogo from "$lib/assets/mail.png";
+    import githubLogo from "$lib/assets/github.svg";
 </script>
 
 <footer>
