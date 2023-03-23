@@ -11,4 +11,4 @@
     Here you can read some XKCD comics. 
 </p>
 
-<Comics />
+<Comics email='d.zakirov@innopolis.university'/>

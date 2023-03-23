@@ -2,11 +2,13 @@
     import Time from "svelte-time";
     import { fetchComicPage } from '../api/fetchComics'
     import type { ComicsInfo } from '../types/ComicsInfo';
+    
+    export let email: string; 
 
-    let comicsInfo = fetchComicPage();
+    let comicsInfo: Promise<ComicsInfo> = fetchComicPage(email);
 
     function reroll(_: MouseEvent) {
-        comicsInfo = fetchComicPage();
+        comicsInfo = fetchComicPage(email);
     }
 
     function formDate(info: ComicsInfo) {

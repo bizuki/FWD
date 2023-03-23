@@ -1,15 +1,19 @@
-<script>
-    import telegramLogo from "$lib/assets/telegram.svg";
-    import mailLogo from "$lib/assets/mail.png";
-    import githubLogo from "$lib/assets/github.svg";
+<script lang="ts">
+    type FooterItem = {
+        href: string;
+        alt: string;
+        src: string;
+    };
+
+    export let items: FooterItem[];
 </script>
 
 <footer>
     <hr>
     <div class="contacts">
-      <a id="tg-link" href="https://t.me/Bizuki"><img src="{telegramLogo}" alt="telegram"></a>
-      <a id="gh-link" href="https://github.com/bizuki"><img src="{githubLogo}" alt="github"></a>
-      <a id="email" href="mailto:dollar.daler@gmail.com"><img src="{mailLogo}" alt="email"></a>
+      {#each items as footerItem}
+        <a href={footerItem.href}><img src={footerItem.src} alt={footerItem.alt}></a>
+      {/each}
     </div>
 </footer>
 

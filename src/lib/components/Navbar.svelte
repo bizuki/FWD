@@ -1,12 +1,19 @@
-<script>
-  import { base } from '$app/paths';
+<script lang='ts'>
+  type NavbarItem = {
+      href: string;
+      title: string;
+  };
+
+  export let items: NavbarItem[];
+
 </script>
 
 <header>
     <div class="topnav">
       <div class="links">
-        <a href="{base}/">Home</a>
-        <a href="{base}/comics/">Comics page</a>
+        {#each items as navbarItem}
+          <a href={navbarItem.href}>{navbarItem.title}</a>
+        {/each}
       </div>
     </div>
   <hr>
